@@ -1,0 +1,141 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration file="C:\Users\chanye\Desktop\HTP_Bundle\MATLAB_Camera_Control_ws\HTP_Camera_Control\HTP_Camera_Control.prj" location="C:\Users\chanye\Desktop\HTP_Bundle\MATLAB_Camera_Control_ws\HTP_Camera_Control" name="HTP_Camera_Control" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>HTP_Camera_Control</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>HTP Team</param.authnamewatermark>
+    <param.email />
+    <param.company>University of Missouri - Columbia</param.company>
+    <param.summary>High-Throughput Phenotyper Software</param.summary>
+    <param.description>High-Throughput Phenotyper Software for Plant Research</param.description>
+    <param.screenshot>${PROJECT_ROOT}\HTP_Camera_Control_Icon.PNG</param.screenshot>
+    <param.guid />
+    <param.installpath.string>\University of Missouri - Columbia\HTP_Camera_Control\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes>* This program requires:
+-- Point Grey FlyCapture from &lt;a href="http://ww2.ptgrey.com"&gt;http://ww2.ptgrey.com&lt;/a&gt;
+-- QImaging-QCam from &lt;a href="http://www.qimaging.com/"&gt;http://www.qimaging.com/&lt;/a&gt;</param.install.notes>
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\HTP_Camera_Control\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\HTP_Camera_Control\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\HTP_Camera_Control\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\HTP_Camera_Control</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages>
+      <item>&lt;package displayname="GenICam Interface" enabled="true" name="GenICam Interface" product="Image Acquisition Toolbox"/&gt;</item>
+      <item>&lt;package displayname="Point Grey Hardware" enabled="true" name="Point Grey Hardware" product="Image Acquisition Toolbox"&gt;
+   &lt;thirdparty downloadurl="" name="Point Grey FlyCapture" url="http://ww2.ptgrey.com"/&gt;
+&lt;/package&gt;</item>
+      <item>&lt;package displayname="OS Generic Video Interface" enabled="true" name="OS Generic Video Interface" product="Image Acquisition Toolbox"/&gt;</item>
+      <item>&lt;package displayname="QImaging Hardware" enabled="true" name="QImaging Hardware" product="Image Acquisition Toolbox"&gt;
+   &lt;thirdparty downloadurl="" name="QImaging-QCam" url="http://www.qimaging.com/"/&gt;
+&lt;/package&gt;</item>
+      <item>&lt;package displayname="GigE Vision Hardware" enabled="true" name="GigE Vision Hardware" product="Image Acquisition Toolbox"/&gt;</item>
+    </param.support.packages>
+    <param.web.mcr>false</param.web.mcr>
+    <param.package.mcr>true</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.email />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\HTP_Camera_Control.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\core-3.3.0.jar</file>
+      <file>${PROJECT_ROOT}\HTP_Camera_Control.fig</file>
+      <file>${PROJECT_ROOT}\HTP_Camera_Control.m</file>
+      <file>${PROJECT_ROOT}\HTP_Camera_Control.prj</file>
+      <file>${PROJECT_ROOT}\HTP_Camera_Control_Icon.PNG</file>
+      <file>${PROJECT_ROOT}\ImageProcessor.m</file>
+      <file>${PROJECT_ROOT}\javase-3.3.0.jar</file>
+      <file>${PROJECT_ROOT}\lensdistort.m</file>
+    </fileset.resources>
+    <fileset.package>
+      <file>${PROJECT_ROOT}\HTP_Camera_Control_Icon.PNG</file>
+    </fileset.package>
+    <fileset.depfun />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\HTP_Camera_Control\for_testing" name="HTP_Camera_Control.exe" optional="false">C:\Users\chanye\Desktop\HTP_Bundle\MATLAB_Camera_Control_ws\HTP_Camera_Control\HTP_Camera_Control\for_testing\HTP_Camera_Control.exe</file>
+      <file location="${PROJECT_ROOT}\HTP_Camera_Control\for_testing" name="splash.png" optional="false">C:\Users\chanye\Desktop\HTP_Bundle\MATLAB_Camera_Control_ws\HTP_Camera_Control\HTP_Camera_Control\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\HTP_Camera_Control\for_testing" name="readme.txt" optional="true">C:\Users\chanye\Desktop\HTP_Bundle\MATLAB_Camera_Control_ws\HTP_Camera_Control\HTP_Camera_Control\for_testing\readme.txt</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2017a</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="embeddedcoder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.2</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

@@ -1,0 +1,12 @@
+leftImg = imread('C:\Users\ycth8\Desktop\leftImage.jpg');
+topImg = imread('C:\Users\ycth8\Desktop\topImage.jpg');
+rightImg = imread('C:\Users\ycth8\Desktop\rightImage.jpg');
+s = ImageProcessor(leftImg, topImg, rightImg);
+[image_sframe1, image_sframe2, image_sframe3, image_sframe4] = s.leftCamCrop();
+[image_stframe5, image_stframe6, image_stframe7, image_stframe8, image_stframe9, image_stframe10, image_stframe11, image_stframe12] = s.topCamCrop();
+[image_sframe13, image_sframe14, image_sframe15, image_sframe16] = s.rightCamCrop();
+%s = s.scanAztec();
+s = s.scanUPCA();
+s = s.setSavePath('C:\Users\ycth8\Desktop\hello\');
+s = s.setExperimentName('100_ecotype_Spring_2018');
+s = s.saveImagesUsingUPCA();
